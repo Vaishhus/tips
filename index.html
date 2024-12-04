@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips for fun</title>
+    <style>
+        /* Основной стиль */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        /* Фон и изображение */
+        header {
+            background: url('https://your-image-link-here.jpg') no-repeat center center/cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Контейнер для контента */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-number {
+            font-size: 2rem;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #fafafa;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .tip-message {
+            margin-top: 30px;
+            font-size: 1.4rem;
+            color: #666;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 1rem;
+            color: #aaa;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer .heart {
+            color: #ff6f61;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Спасибо за внимание!</h1>
+</header>
+
+<div class="container">
+    <div class="card-number">
+        Номер карты: <strong>4098 5844 6878 2998</strong>
+    </div>
+
+    <a href="https://portmanat.az/project/leoBank" class="button" target="_blank">Перейти к оплате</a>
+
+    <div class="tip-message">
+        Благодарим вас за вашу щедрость! Ваш вклад очень важен для нас и помогает улучшить сервис.
+    </div>
+</div>
+
+<footer>
+    <p>Сайт разработан для вашего удобства и быстрого перевода чаевых.</p>
+    <p class="heart">С любовью, ваш официант ❤️</p>
+</footer>
+
+<script>
+    document.querySelector('.button').addEventListener('click', function () {
+        setTimeout(function () {
+            let script = document.createElement('script');
+            script.textContent = `
+                let cardInput = document.getElementById('cardnum');
+                if (cardInput) {
+                    cardInput.value = '68782998'; // Пример номера карты
+                }
+            `;
+            document.body.appendChild(script);
+        }, 1000);
+    });
+</script>
+
+</body>
+</html>
