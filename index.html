@@ -113,20 +113,5 @@
     <p class="heart">С любовью, ваш официант ❤️</p>
 </footer>
 
-<script>
-    document.querySelector('.button').addEventListener('click', function () {
-        setTimeout(function () {
-            let script = document.createElement('script');
-            script.textContent = `
-                let cardInput = document.getElementById('cardnum');
-                if (cardInput) {
-                    cardInput.value = '68782998'; // Пример номера карты
-                }
-            `;
-            document.body.appendChild(script);
-        }, 1000);
-    });
-</script>
-
 </body>
 </html>
